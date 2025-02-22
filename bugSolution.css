@@ -1,0 +1,9 @@
+To fix this, always ensure that all values within the `calc()` function have units that are consistent.  Here's the corrected code:
+
+```css
+.container {
+  width: calc(50% + 200px);
+}
+```
+
+Now, `200px` explicitly states that the value is 200 pixels, leading to consistent width calculation across different browsers. You can use any appropriate unit (like `em`, `rem`, etc.) depending on your context.
