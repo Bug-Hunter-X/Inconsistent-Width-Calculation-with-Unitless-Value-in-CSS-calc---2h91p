@@ -1,0 +1,9 @@
+The following CSS code snippet demonstrates an uncommon error: using a unitless value for the `width` property within a `calc()` function where a unit is expected. This can lead to unexpected results or rendering issues across different browsers.
+
+```css
+.container {
+  width: calc(50% + 200);
+}
+```
+
+The problem is the `200` value.  It's missing a unit (px, em, rem, etc.), causing inconsistencies in how browsers interpret and calculate the final width.
